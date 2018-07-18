@@ -10,7 +10,7 @@ import xlwt
 from matplotlib.font_manager import FontProperties
 
 font = FontProperties(fname='C:\Windows\Fonts\simkai.ttf')
-effect = 'com.yourpackage.com'
+effect = 'com.xunlei.tdlive'
 '''读取json配置文件函数'''
 def rejson(file):
     with open(file, "r") as f:
@@ -29,7 +29,7 @@ def start(file):
 def run(file):
     meminfocmd = rejson(file)['meminfocmd']
     cpuinfocmd1 = rejson(file)['cpuinfocmd']
-    str2 = ' "com.yourpackage.com"'
+    str2 = ' "com.xunlei.tdlive"'
     cpuinfocmd = str(cpuinfocmd1) + str2
     tempinfocmd = rejson(file)['tempinfocmd']
     t = int(rejson(file)['time'])
